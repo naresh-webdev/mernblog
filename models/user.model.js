@@ -16,6 +16,11 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    profilePicture: {
+      type: String,
+      default:
+        "https://icon-library.com/images/profile-icon-vector/profile-icon-vector-7.jpg",
+    },
   },
   { timestamps: true }
 );
